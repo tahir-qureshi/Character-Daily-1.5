@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mucaroo.characterdailyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.WelComeActivity" />
+        <activity android:name=".activities.AllLessonsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.ArticleActivity" />
+        <!-- <activity android:name=".activities.AllLessonsActivity" /> -->
+        <activity android:name=".activities.MoreOptionsActivity" />
+        <activity android:name=".activities.MoreCharacterToolsActivity" />
+        <activity android:name=".activities.SixPillarsActivity" />
+        <activity android:name=".activities.FeedBackActivity" />
+        <activity android:name=".activities.MyScoreActivity" />
+        <activity android:name=".activities.CatholicFaithActivity" />
+        <activity android:name=".activities.TeamActivity" />
+        <activity android:name=".activities.LockAndKeyActivity" />
+        <activity android:name=".activities.TrustworthinessActivity" />
+        <activity android:name=".activities.RespectActivity" />
+        <activity android:name=".activities.ResponsibilityActivity" />
+        <activity android:name=".activities.FairnessActivity" />
+        <activity android:name=".activities.CaringActivity" />
+        <activity android:name=".activities.CitizenShipActivity" />
+        <activity android:name=".activities.ImageGettingActivity" />
+        <activity android:name=".activities.ImageDownloading" />
+        <activity android:name=".activities.DailyChallengeScoreActivity" />
+        <activity android:name=".activities.MyProfileActivity" />
+        <activity android:name=".activities.PillarOrderActivity" />
+        <activity android:name=".activities.MyLessonSubmissionActivity" />
+        <activity android:name=".activities.DailyQuoteActivity" />
+        <activity android:name=".activities.DailyBehaviourActivity" />
+        <activity android:name=".activities.DailyLessonActivity" />
+        <activity android:name=".activities.DailyPledgeActivity" />
+        <activity android:name=".activities.buttomSheet" />
+        <activity android:name=".activities.QuoteSubmissionActivity" />
+        <activity android:name=".activities.NotesActivity" />
+        <activity android:name=".activities.IntroductionActivity" />
+        <activity android:name=".activities.AllLessonPledgeActivity" />
+        <activity android:name=".activities.AllLessonBehaviourActivity" />
+        <activity android:name=".activities.AllLessonDailyLessonActivity" />
+        <activity android:name=".activities.AllLessonFeedBackActivity" />
+        <activity android:name=".activities.AllLessonMyLessonSubmissionActivity" />
+        <activity android:name=".activities.AllLessonDailyQuote" />
+        <activity android:name=".activities.AllLessonQuoteSubmissionActivity" />
+        <activity android:name=".activities.AllLessonNoteActivity" />
+        <activity android:name=".activities.AppFeedBackActivity" />
+        <activity android:name=".activities.MoreOptionMyLessonSubMissionActivity"></activity>
+    </application>
+
+</manifest>

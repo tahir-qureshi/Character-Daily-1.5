@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id="@+id/listitem"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+            <ImageView
+                android:id="@+id/ivlesson"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="13"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_lessonDate"
+                    style="@style/DailLesson_Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    style="@style/DailLesson_Light_Heading"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:text="WHAT DOES IT MEAN\nTO COOPERATE? " />
+
+                <TextView
+                    android:id="@+id/tv_garde_no"
+                    style="@style/Light_Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="bottom"
+                    android:layout_weight="2"
+                    android:focusable="false"
+                    android:paddingRight="20dp"
+                    android:text="K - 2nd" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

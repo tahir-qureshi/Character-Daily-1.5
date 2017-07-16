@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mucaroo.characterdailyapp.activities.PillarOrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Press and hold ≡ to rearrange your pillar schedule"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Customize Order"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:onClick="onToggleClicked"
+            android:textOn="on"
+            android:textOff="off"/>
+        <!--android:background="@drawable/bgtoggle"-->
+    </RelativeLayout>
+
+
+    <include layout="@layout/content_main" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

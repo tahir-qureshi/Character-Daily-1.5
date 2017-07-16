@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.mucaroo.characterdailyapp.activities.PillarOrderActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:text="Press and hold ≡ to rearrange your pillar schedule"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Customize Order"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="22dp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton11111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bgtoggle"
+                    android:onClick="onToggleClicked"
+                    android:textOn="Vibrate on"
+                    android:textOff="Vibrate off"
+                     />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pillarList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:id = "@+id/tvzeroPillardate"
+                    android:text="Oct 3,2016"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Trusworthiness"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvstate"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/toggleButton1"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="20dp" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/toggleButton1"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginBottom="34dp"-->
+                    <!--android:text="My Switch Button" />-->
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/tvonePillardate"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Nov 1,2016"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Respect"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:id = "@+id/tvtwoPillardate"
+                    android:text="Dec 1,2016"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Responsibility"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Jan 1,2017"
+                    android:id = "@+id/tvthreePillardate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Fairness"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Feb 8,2017"
+                    android:id = "@+id/tvfourPillardate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Caring"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Mar 18,2017"
+                    android:id = "@+id/tvfivePillardate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Trusworthiness"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="40px"
+                        android:text="≡"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        `
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#A9A9A9">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_calander"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearLayout01"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/btn_all_lessons"
+                    style="@style/btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="ALL LESSONS"></Button>
+
+
+                <Button
+                    android:id="@+id/btn_more_options"
+                    style="@style/btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:text="MORE..."></Button>
+                <!--android:layout_marginRight="40px"-->
+            </RelativeLayout>
+
+        </FrameLayout>
+    </TableLayout>
+</ScrollView>

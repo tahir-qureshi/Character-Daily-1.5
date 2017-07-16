@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mucaroo.characterdailyapp.actions.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back_arrow"
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="DAILY LESSON"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/setting_image"
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:background="@mipmap/setting_icon"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dailyLessonImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:gravity="start"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dailylessonimg" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/share_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:hint="Hello" />-->
+
+                <TextView
+                    android:id="@+id/tvtitle"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp"
+                    android:layout_marginTop="20sp"
+                    android:elevation="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="GOOD  CHOICE, BAD CHOICE"
+                    android:textSize="25sp" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10sp"
+                    android:background="#696969" />
+
+                <TextView
+                    android:id="@+id/tvlesson_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center_horizontal"
+                    android:text='Adapted from "Learning for Life: A Partner in\n Education "(a subsidary of the Boy Scouts of \n America). Used With permission. Copyrighted \n material of the Boy Scouts of America.All rights \nreserved.   '
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/transparent"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10sp"
+                    android:background="#696969" />
+
+                <TextView
+                    android:id="@+id/tvbody"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="Children learn the difference between good and bad decisions. They also learn to consider consequences before acting. Ask: Who can tell me what it means to make a good decision?\n\nSay: Sometimes we choose to do things that are not right because we think our choice will make us happy.\n\nAsk: Can someone give me an example of making a bad decision? Compliment the children on their answers.\n\nSay: These are great examples. Now let me give you another example. If your friend invites you to share a pizza, and you choose to do so, this is not a bad decision. Pizza is not bad for you. But if a friend suggests that you steal candy from the store, and you choose to do so, this is not a good decision. Why? Because stealing is always wrong, and you could get into trouble for making this decision.\n\nAsk them what kind of trouble they can get into by making bad choices like stealing. Also, ask them who else is harmed when a bad decision like this is made.\n\nEncourage all students to respond. "
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20sp"
+                    android:background="#696969" />
+
+                <LinearLayout
+                    android:id="@+id/LinearlayoutNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivattach"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="20sp"
+                        android:layout_marginBottom="50px"
+                        android:layout_weight="0.7"
+                        android:gravity="left"
+                        app:srcCompat="@mipmap/attachment_ic" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="my notes for this lesson"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10sp"
+                    android:background="#696969" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_lesson_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="20sp"
+                        android:layout_marginBottom="50px"
+                        android:layout_weight="0.7"
+                        android:gravity="right"
+                        app:srcCompat="@mipmap/empty_circle" />
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical"
+                        android:text="I completed this challange by sharing this lesson"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#A9A9A9">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="20px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_calander"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/circle"
+                            android:gravity="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LinearLayout01"
+                        android:layout_gravity="bottom">
+
+                        <Button
+                            android:id="@+id/btn_all_lessons"
+                            style="@style/btn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:text="ALL LESSONS"></Button>
+
+
+                        <Button
+                            android:id="@+id/btn_more_options"
+                            style="@style/btn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:text="MORE..."></Button>
+                        <!--android:layout_marginRight="40px"-->
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.mucaroo.characterdailyapp.actions.BottomSheetLayout>

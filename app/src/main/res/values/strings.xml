@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Character Daily</string>
+    <string name="placeholder">PLACEHOLDER</string>
+
+    <string name="cargando">Cargando</string>
+    <string name="loading">LOADING</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+
+    <string name="daily_lesson">Daily Lesson</string>
+    <string name="daily_quote">Daily Quote</string>
+    <string name="daily_behavior">Daily Behavior</string>
+    <string name="daily_pledge">Daily Pledge</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

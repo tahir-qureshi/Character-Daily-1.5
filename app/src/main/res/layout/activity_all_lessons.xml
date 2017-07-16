@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mucaroo.characterdailyapp.activities.AllLessonsActivity">
+
+
+    <!--<RelativeLayout-->
+    <!--style="@style/Box"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--android:padding="20dp"-->
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#a8afb7"
+        android:orientation="vertical">
+
+        <!--<SearchView-->
+            <!--android:id="@+id/search"-->
+            <!--style="@style/InputSearch"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="#fff"-->
+            <!--android:gravity="center"-->
+            <!--android:iconifiedByDefault="false"-->
+            <!--android:queryHint="Search"-->
+            <!--android:textColor="#000"></SearchView>-->
+
+
+        <EditText
+        android:id="@+id/et_search"
+        style="@style/InputSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:gravity="left|center"
+        android:hint="Search"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:singleLine="true"
+        ></EditText>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listAllLessons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:divider="#DCDCDC"
+        android:dividerHeight="2dp"
+        android:focusable="true"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#A9A9A9">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_calander"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout01"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_all_lessons"
+                style="@style/btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="ALL LESSONS"></Button>
+
+
+            <Button
+                android:id="@+id/btn_more_options"
+                style="@style/btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:text="MORE..."></Button>
+            <!--android:layout_marginRight="40px"-->
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#ededed</color>
+    <color name="whitAccent">#ededed</color>
+    <color name="transparent">#3399FF</color>
+    <color name="text_gray">#8C000000</color>
+    <color name="screen_background">#ffffff</color>
+
+    <color name="progress_bg">#000</color>
+    <color name="progress_error_bg">#ffffff</color>
+
+    <color name="progress_text">#ededed</color>
+    <color name="progress_error_text">#000</color>
+    <color name="progress_text_try">#4c4cff</color>
+    <color name="progress_text_email">#ff4c4c</color>
+
+    <color name="red">#ff4c4c</color>
+    <color name="green">#008000</color>
+    <color name="blue">#3399FF</color>
+    <color name="divider_gray">#AAe2e2e2</color>
+</resources>
